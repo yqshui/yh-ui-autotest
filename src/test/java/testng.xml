@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--测试运行以及输出测试报告-->
+<suite name="ui自动化">
+    <test name="采购中台">
+        <classes>
+            <class name="com.yh.uiautotest.PurchasesUITest">
+                <!--运行的方法-->
+                <methods>
+                    <include name="test1">云超平台->H*->可选1-4->必填->必填</include>
+                    <include name="test2">云超平台->U*->可选1-4->置灰->必填</include>
+                    <include name="test3">云超平台->A*->置灰->必填->选填</include>
+                    <include name="test4">云超平台->P*->置灰->置灰->选填</include>
+                    <include name="test5">云超平台->10*->置灰->置灰->选填</include>
+                    <include name="test6">云超PB->H*->5且置灰->必填->必填</include>
+                    <include name="test7">云超PB->U*->5且置灰->置灰->必填</include>
+                    <include name="test8">云超PB->A*->置灰->必填->选填</include>
+                    <include name="test9">云超PB->P*->置灰->置灰->选填</include>
+                    <include name="test10">云超PB->10*->置灰->置灰->选填</include>
+                    <include name="test11">云超战区->H*->可选6-8->必填->必填</include>
+                    <include name="test12">云超战区->U*->8且置灰->置灰->必填</include>
+                    <include name="test13">云超战区->A*->置灰->必填->选填</include>
+                    <include name="test14">云超战区->P*->置灰->置灰->选填</include>
+                    <include name="test15">云超战区->10*->置灰->置灰->选填</include>
+                    <include name="test16">彩食鲜->H*->可选1-8->必填->必填</include>
+                    <include name="test17">彩食鲜->U*->可选1-8->置灰->必填</include>
+                    <include name="test18">彩食鲜->A*->置灰->必填->选填</include>
+                    <include name="test19">彩食鲜->P*->置灰->置灰->选填</include>
+                    <include name="test20">彩食鲜->10*->置灰->置灰->选填</include>
+                    <include name="test21">云创->H*->可选1-8->必填->必填</include>
+                    <include name="test22">云创->U*->可选1-8->置灰->必填</include>
+                    <include name="test23">云创->A*->置灰->必填->选填</include>
+                    <include name="test24">云创->P*->置灰->置灰->选填</include>
+                    <include name="test25">云创->10*->置灰->置灰->选填</include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!--监听器  测试报告-->
+  <listeners>
+        <listener class-name="com.yh.uiautotest.ExtentTestNGIReporterListener"></listener>
+    </listeners>
+</suite>
